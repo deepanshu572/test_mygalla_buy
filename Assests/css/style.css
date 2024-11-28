@@ -1,0 +1,2284 @@
+.after-galla-box,
+.contact-map-div,
+.img-top-wrap,
+.main,
+.mygalla_img,
+.slider {
+    overflow: hidden
+}
+.h1, .h2, .h3, .h4, .h5, .h6, h1, h2, h3, h4, h5, h6{
+    margin-bottom:0px !important;
+}
+p{
+    margin-bottom:0px !important;
+}
+.bottom-right-icon1 a{
+        position: relative;
+    top: -6px;
+}
+.contact-map-div iframe,
+.foot-last-icon1 svg,
+.galla-img img,
+.img-top-wrap svg,
+.main,
+.mygalla_buy_buisness_img img,
+.mygalla_buy_right-_section svg,
+.mygalla_buy_video_img1 img,
+.mygalla_img img,
+.mygalla_journey-img-wrap iframe,
+.mygalla_our-client-img svg,
+.product-right-section img,
+.right-img-galla img,
+.text-img img,
+body {
+    width: 100%;
+    height: 100%;
+    object-fit: cover
+}
+
+.mygalla_buy_now_frame-wrapper p,
+.mygalla_buy_plans p,
+.mygalla_our-clients h1,
+.what-galla h2,
+.what-galla p,
+.why-galla {
+    text-align: center
+}
+
+.nav,
+.navigation-btn:hover {
+    background: var(--theme-color1)
+}
+
+@font-face {
+    font-family: nirmala;
+    src: url('../font/Nirmala.woff') format('woff')
+}
+
+:root {
+    /* --theme-color1: #43ab13 */
+        /* --theme-color1: #43ab13 */
+    /* --theme-color1: #0A5c16 */
+    /* --theme-color1: #0b6521 */
+    /* --theme-color1: #295700 */
+    /* --theme-color1: #00610a */
+    /* --theme-color1: #2a6600 */
+    /* --theme-color1: #00660f */
+    /* --theme-color1: #0b6600 */
+        --theme-color1: #006615
+}
+
+* {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: nirmala !important
+}
+
+.nav {
+    padding: 10px 66px;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    box-shadow: 2px 2px 3px #8c8c8c52;
+    position: fixed;
+    width: 100%;
+    z-index: 9;
+    height: 62px;
+}
+
+.nav1 {
+    width: 125px
+}
+
+.img-top-wrap img,
+.mygalla_buy_box_img1 img,
+.mygalla_buy_head_img img,
+.mygalla_buy_iframe-wrap iframe,
+.mygalla_buy_img1 img,
+.mygalla_buy_right-_section img,
+.mygalla_our-client-img img,
+.nav1 img,
+.wrap-svg svg {
+    width: 100%;
+    height: 100%
+}
+
+.circle-div,
+.footleft1 span {
+    position: relative
+}
+
+.nav2 {
+    display: flex;
+    gap: 25px
+}
+
+.footleft3 a,
+.nav2 a {
+    font-size: 16px;
+    color: #fff;
+    text-decoration: none
+}
+
+.product-section {
+    /* background-color: #eff4e6; */
+    background: #e6f0e8;
+    padding-top: 5rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    padding-bottom: 2rem;
+    height: 600px;
+    flex-wrap: wrap
+}
+
+.product-right-section {
+    width: 550px;
+    height: 347px
+}
+
+.product-left-text {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 17px
+}
+
+.product-left-text h1 {
+    font-size: 59px
+}
+
+.mygalla_buy_plan1 h2,
+.product-left-text p {
+    padding-bottom: 4px;
+    font-size: 18px
+}
+
+.contact-detail1 span h3,
+.coustomer-support b,
+.mygalla_buy_benefits b,
+.mygalla_buy_buisness_section b,
+.mygalla_buy_plans b,
+.mygalla_our-clients b,
+.mygalla_our-journey h2 b,
+.product-form form b,
+.product-left-text b,
+.text-galla-head h3,
+.what-galla b,
+.why-galla h2 b {
+    color: var(--theme-color1)
+}
+
+.product-left-text button {
+    background-color: var(--theme-color1);
+    padding: 10px 23px;
+    color: #fff;
+    border: none;
+    font-size: 15px;
+    border-radius: 8px
+}
+
+.product-video-form {
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    padding: 3rem 2rem;
+    flex-wrap: wrap
+}
+
+.product-form {
+       /* background-color: #eff4e6; */
+       background-color: #e6f0e8;
+       box-shadow: 0 2px 25px 0 #5e940040;
+       padding: 30px 10px;
+       width: 380px;
+       box-shadow: 0px 2px 15px 0px #43AB1326;
+       border-radius: 7px
+}
+
+.detail-galla,
+.left-text-galla button,
+.product-form form button {
+    background-color: var(--theme-color1)
+}
+
+.bottom-text,
+.detail-galla,
+.product-form form {
+    display: flex;
+    width: 100%
+}
+
+.product-form form {
+    height: 100%;
+    flex-direction: column;
+    align-items: center;
+    gap: 20px
+}
+
+.product-form form h2 {
+    font-size: 16px;
+    font-weight: 900
+}
+
+.ancor-wrap,
+.mygalla_journey-right {
+    width: 100%
+}
+
+.reverse-section .mygalla_journey-right {
+    width: auto
+}
+
+.contact-detail-div,
+.footleft3,
+.mygalla_journey-left,
+.product-form form .inp1,
+.text-galla-head {
+    display: flex;
+    flex-direction: column
+}
+
+.product-form form .inp1 label {
+    padding-bottom: 3px;
+    font-size: 12px
+}
+
+
+.product-form form .inp1 input,
+.product-form form .inp1 select {
+    border: none;
+    background-color: #fff;
+    border-radius: 7px;
+    padding: 8px;
+    width: 313px;
+    outline: 0;
+    border: 0.5px solid var(--theme-color1);
+    color: #575757;
+    height: 40px;
+}
+
+.product-form form button {
+    padding: 8px 10px;
+    color: #fff;
+    border: none;
+    border-radius: 8px;
+    font-size: 18px;
+    width: 314px
+}
+
+.bottom-text {
+    flex-direction: column;
+    align-items: baseline;
+    gap: 5px;
+    padding-top: 7px;
+    width: 313px;
+    margin: auto
+}
+
+.bottom-text a {
+    text-decoration: none;
+    color: var(--theme-color1)
+}
+
+.detail-galla {
+    align-items: center;
+    justify-content: space-around;
+    padding: 53px 64px;
+    flex-wrap: wrap
+}
+
+.galla-img,
+.text-img {
+    background: #fff;
+    overflow: hidden
+}
+
+.box1-galla,
+.contact-div,
+.detail-gala-box,
+.foot-last-icon1,
+.text-first-section,
+.top-detail {
+    align-items: center;
+    display: flex
+}
+
+.detail-gala-box {
+    gap: 12px
+}
+
+.galla-text {
+    display: flex;
+    flex-direction: column;
+    color: #fff
+}
+
+.galla-img {
+    width: 45px;
+    height: 45px;
+    border-radius: 50%;
+    padding: 6px
+}
+
+.galla-text small,
+.second-scroll-div p,
+.span-head del {
+    font-size: 13px
+}
+
+.what-galla h2,
+.why-galla h2 {
+    font-size: 40px
+}
+
+.why-galla h2 {
+    padding-bottom: 17px
+}
+
+.what-galla {
+    padding: 3rem 0
+}
+
+.what-galla p {
+    z-index: 1
+}
+
+.box1-galla {
+    justify-content: space-around;
+    flex-wrap: wrap
+}
+
+.text-first-section {
+    gap: 16px;
+    z-index: 1
+}
+
+.bottom-right,
+.box-galla,
+.foot-right,
+.left-text-galla {
+    flex-direction: column;
+    display: flex
+}
+
+.left-text-galla {
+    align-items: baseline;
+    gap: 17px;
+    padding-left: 124px;
+    width: 500px
+}
+
+.left-text-galla p {
+    padding-left: 19px;
+    text-align: start
+}
+
+.left-text-galla button {
+    padding: 11px 19px;
+    color: #fff;
+    font-size: 15px;
+    border: none;
+    border-radius: 7px;
+   /* margin-left: 17px; */
+}
+
+.text-galla-head h3 {
+    font-size: 23px
+}
+
+.footleft3 span,
+.text-galla-head small {
+    font-size: 14px
+}
+
+.right-img-galla {
+    width: 239px;
+    height: 444px
+}
+
+.text-img {
+    border: 3px solid var(--theme-color1);
+    border-radius: 50%;
+    width: 70px;
+    height: 70px;
+    padding: 12px
+}
+
+.circle-div .circle {
+    height: 400px;
+    width: 400px;
+    position: absolute;
+    border: 45px solid #e6f0e8;
+    /* border: 45px solid #43aB131A; */
+    padding: 30px;
+    border-radius: 50%;
+    left: -333px;
+    top: -89px
+}
+
+.reverse .circle-div .circle {
+    right: -391px;
+    top: -42px;
+    left: 0
+}
+
+.box-galla {
+    gap: 45px
+}
+
+.after-galla-box {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 149px;
+    justify-content: center;
+    box-shadow: 0 4px 25px 0 #5e940040;
+    border-radius: 5px
+}
+
+.top-detail {
+    background: #c8c8c8;
+    width: 100%;
+    padding: 14px 10px;
+    justify-content: center
+}
+
+.bottom-detail {
+    background: #fff;
+    width: 100%;
+    padding: 4px 20px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 51px
+}
+
+.first-scroll-div img,
+.img-top-wrap {
+    width: 50px;
+    height: 50px
+}
+
+.after-galla-detail-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 26px 10px;
+    gap: 64px;
+    flex-wrap: wrap
+}
+
+.img-top-wrap {
+    box-shadow: 0 4px 25px 0 #00000040;
+    border-radius: 50%;
+    padding: 14px;
+    background: #fff;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.first-scroll-div img {
+    width: 40px;
+    height: 40px
+}
+
+.second-scroll-div img {
+    width: 14px;
+    height: 14px
+}
+
+.bottom-detail p {
+    font-size: 12px;
+    font-weight: 700;
+    color: var(--theme-color1)
+}
+
+.coustomer-support {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 1rem 0;
+    gap: 1px
+}
+
+.coustomer-support h2 {
+    font-weight: 900;
+    font-size: 38px
+}
+
+.support-yt {
+    padding-top: 13px
+}
+
+.scroller1-box {
+    width: 268px;
+    border-radius: 0 20px;
+    box-shadow: 0 4px 11px 0 #5e940040;
+    padding: 10px;
+    display: inline-block;
+    white-space: normal;
+    height: 181px
+}
+
+.contact-section {
+    padding: 2rem 0
+}
+
+@keyframes scrollLeft {
+    to {
+        left: -200px
+    }
+}
+
+.slider {
+    width: 800px;
+    position: relative;
+    border-radius: 10px
+}
+
+.imgs_slides {
+    height: 300px;
+    display: flex;
+    align-items: center
+}
+
+.imgs_slides input {
+    display: none
+}
+
+.slide {
+    transition: 1s cubic-bezier(.19, 1, .22, 1);
+    margin: 10px
+}
+a{
+    text-decoration: none;
+}
+.navigation {
+    position: absolute;
+    width: 900px;
+    /* margin-top: -25px; */
+    margin-top: -8px;
+    display: flex;
+    justify-content: center;
+   
+}
+
+.navigation-btn {
+    padding: 5px;
+    border-radius: 10px;
+    cursor: pointer;
+    width: 15px;
+    height: 15px;
+    transition: 1s;
+    background: #e1e1e1
+}
+
+.navigation-btn:not(:last-child) {
+    margin-right: 13px
+}
+
+#radio1:checked~.first {
+    margin-left: 1%
+}
+
+#radio2:checked~.first {
+    margin-left: -20%
+}
+
+#radio3:checked~.first,
+#radio7:checked~.second {
+    margin-left: -40%
+}
+
+#radio4:checked~.first {
+    margin-left: -54%
+}
+
+#radio6:checked~.second {
+    margin-left: 0
+}
+
+#radio8:checked~.second {
+    margin-left: -60%
+}
+
+#radio9:checked~.second {
+    margin-left: -80%
+}
+
+.mygalla_our-client-box-wrap {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 21px
+}
+
+.contact-section,
+.mygalla_our-clients {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center
+}
+
+.mygalla_our-clients .imgs_slides {
+    height: 179px
+}
+
+.mygalla_our-clients .slider {
+    width: 900px;
+    display: flex;
+    align-items: end;
+    padding: 0 0 2rem;
+    height: 299px;
+}
+
+.mygalla_our-client-box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 135px;
+    height: 108px;
+    justify-content: center;
+    gap: 8px
+}
+
+.mygalla_our-client-box1 p {
+    color: var(--theme-color1);
+    font-size: 14px;
+    font-weight: 600
+}
+
+.first-scroll-div {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    height: 47px
+}
+
+.second-scroll-div {
+    display: flex;
+    flex-direction: column;
+    align-items: baseline;
+    gap: 9px;
+    padding: 6px 0
+}
+
+.mygalla_journey-box1 {
+    display: flex;
+    justify-content: flex-start;
+    flex-direction: column;
+    padding: 2rem 0
+    /* background: url(../img/mygalla_rocket-bg.png) center no-repeat */
+}
+.journey_img_bg{
+    position: relative;
+    z-index: -1;
+}
+.journey_img_bg img{
+    position: absolute;
+    width: 70vw;
+}
+
+.mygalla_journey-left {
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
+    gap: 16px
+}
+
+.reverse-section {
+    align-items: end;
+    justify-content: flex-end
+}
+
+.reverse-section .mygalla_desc {
+    border-top-left-radius: 13px;
+    border-top-right-radius: 0;
+    width:563px
+
+}
+
+
+.reverse-section .mygalla_desc p {
+    padding: 11px 10px
+}
+
+.mygalla_journey-box1 .mygalla_journey-left {
+    flex-direction: row-reverse
+}
+
+.reverse-section .mygalla_journey-left {
+    flex-direction: row-reverse;
+    justify-content: end
+}
+
+.mygalla_desc,
+.mygalla_title {
+    background: var(--theme-color1);
+    color: #fff;
+    border-top-right-radius: 13px;
+    align-items: center;
+    display: flex
+}
+
+.mygalla_title h3 {
+    width: 129px;
+    margin: auto;
+    text-align: center
+}
+
+.mygalla_title {
+    height: 164px;
+    width: 188px;
+    padding: 10px;
+    border-top-left-radius: 13px;
+    justify-content: center;
+    flex-direction: column;
+    /* box-shadow: 1px 1px 8px #d2d2d2;
+    box-shadow: 1px -1px 6px #d2d2d2; */
+    gap: 10px
+}
+
+.mygalla_desc {
+    width: 539px;
+    padding: 24px 23px;
+    border-bottom-left-radius: 13px;
+    border-bottom-right-radius: 13px;
+    box-shadow: 1px 8px 8px #d2d2d2;
+    justify-content: center;
+    height: 134px
+}
+
+.mygalla_title span {
+    background: #fff;
+    color: var(--theme-color1);
+    padding: 3px 18px;
+    font-size: 14px;
+    border-radius: 4px;
+    box-shadow: 2px 2px 4px #606060ad;
+    font-weight: 900;
+    width: 109.65px;
+    height: 24.4px;
+    text-align: center
+}
+
+.mygalla_buy_buisness_img_wrap,
+.mygalla_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap
+}
+
+.mygalla_journey-img-wrap {    
+    box-shadow: 0 4px 25px 0 #43aB1340;
+    width: 365px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    padding: 17px;
+    height: 157px;
+    position: relative;
+    top: -6px;
+    right: 6px;
+    border-radius: 20px;
+    border-radius: 20px;
+    background: #ffff
+}
+
+.contact-detail1 .mygalla_img {
+    background: #fff;
+    box-shadow: 2px 2px 4px gray;
+    border-radius: 50%;
+    padding: 8px
+}
+
+.reverse-section .mygalla_journey-img-wrap {
+    left: 0
+}
+
+.mygalla_our-journey h2 {
+    text-align: center;
+    font-weight: 900;
+    font-size: 40px
+}
+
+.mygalla_journey-img-wrap img {
+    width: 100%;
+    height: 100%;
+    object-fit: contain
+}
+
+.mygalla_img {
+    margin: auto;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    box-shadow: 0 4px 25px 0 #00000040;
+    border-radius: 50%;
+    padding: 10px;
+    background: #fff
+}
+
+.mygalla_journey-box-wrap {
+    padding: 3rem 21vw
+}
+
+.contact-detail1,
+.footleft4 h2 {
+    padding-bottom: 9px
+}
+
+.bottom-right-icon1 svg,
+.contact-detail1 svg {
+    width: 100%;
+    height: 100%;
+    fill: var(--theme-color1)
+}
+.first_sec_slider{
+        padding: 0 0 1rem !important;
+   height: auto !important;
+}
+
+.contact-detail1 span {
+    display: flex;
+    flex-direction: column;
+    width: 284px;
+    gap: 9px
+}
+
+.contact-detail1 span a {
+    color: #000;
+    text-decoration: none
+}
+
+.contact-detail1 {
+    display: flex;
+    width: 100%;
+    gap: 20px;
+    align-items: center;
+    border-bottom: 1px solid #d4d4d4
+}
+
+.contact-detail-div {
+    gap: 21px;
+    width: 462px;
+    padding: 16px 0
+}
+
+.contact-map-div {
+    width: 400px;
+    height: 200px;
+    border-radius: 16px
+}
+
+.contact-div {
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 17px;
+    gap: 38px;
+    width: 100%
+}
+
+.contact-section h2 {
+    font-size: 37px;
+    font-weight: 800;
+    color: var(--theme-color1)
+}
+
+.mygalla_our-clients h2 {
+    font-size: 38px
+}
+
+.contact-section b,
+.mygalla_buy_now_frame-wrapper b {
+    color: #000
+}
+
+.footer {
+    padding: 15px;
+    background-color: var(--theme-color1);
+    display: flex;
+    justify-content: space-between;
+    color: #fff;
+    flex-wrap: wrap
+}
+
+.foot-left-first-main {
+    display: flex;
+    gap: 89px;
+    flex-wrap: wrap
+}
+
+.foot-left-second-main {
+    display: flex;
+    justify-content: space-between;
+    gap: 204px
+}
+
+.footleft3 span svg {
+    fill: #fff;
+    width: 21px;
+    height: 13px
+}
+
+.footleft3 {
+    gap: 6px
+}
+
+.foot-right {
+    align-items: baseline;
+    gap: 41px;
+    justify-content: space-around
+}
+
+.top-right {
+    width: 354px
+}
+
+.top-right p {
+    font-size: 14px;
+    word-spacing: 3px
+}
+
+.bottom-right {
+    justify-content: center;
+    gap: 14px;
+    width: 100%;
+    padding: 0 10px
+}
+
+.bottom-right-icons,
+.mygalla_buy_btns {
+    display: flex;
+    gap: 13px
+}
+
+.bottom-right-icon1 {
+    background-color: #fff;
+    box-shadow: 0 4px 50px 0 #00000080;
+    width: 25px;
+    height: 25px;
+    border-radius: 50%;
+    padding: 4px
+}
+
+.foot-left {
+    display: flex;
+    flex-direction: column;
+    gap: 23px;
+    padding: 23px
+}
+
+.mygalla_buy_buisness_img_wrapper p {
+    font-weight: 600;
+    color: var(--theme-color1);
+    text-transform: capitalize
+}
+
+.footleft1 svg {
+    width: 165px;
+    height: 64px
+}
+
+.footleft1 {
+    height: 100%
+}
+
+.footleft1 span {
+    font-size: 16px;
+    left: -97px;
+    /*top: -6px*/
+    top: 24px
+}
+
+.btn-demo {
+    position: relative;
+    top: -31px !important;
+    font-size: 18px;
+    background: var(--theme-color1);
+    border: none;
+    padding: 8px 6px;
+    width: 147px;
+    margin: auto;
+    display: block;
+    color: #fff;
+    border-radius: 7px;
+    text-transform: capitalize
+}
+.scroller-review .navigation{
+    margin-top: -20px !important;
+}
+
+.footleft1 p {
+    padding-top: 9px;
+    width: 401px
+}
+
+.footleft2 p {
+    font-size: 16px;
+    padding: 5px 0
+}
+
+.mygalla_our-journey {
+    padding: 1rem 0
+}
+
+.foot-last-icon1 {
+    /* width: auto; */
+    justify-content: center;
+    padding: 0 0px 5px
+}
+
+.foot-last-icon1 a {
+    color: #fff;
+    width: 34px;
+    height: 34px;
+    border-radius: 50%;
+    text-decoration: none
+}
+
+.ancor-demo {
+    width: auto !important;
+    background-color: #000 !important;
+    color: #fff !important;
+    border-radius: 30px !important;
+    padding: 6px 13px !important;
+    rotate: 89deg
+}
+
+.foot-last .ancor-wrap {
+    padding: 45px 1px
+}
+
+.foot-last {
+    position: fixed;
+    bottom: 0;
+    right: 0
+}
+
+.top-right b {
+    font-size: 15px
+}
+
+.mygalla_our-client-box1 {
+    box-shadow: 0 4px 11px 0 #5e940040;
+    background: #eee
+}
+
+.mygalla_our-client-img {
+    width: 41px;
+    height: 41px;
+    display: flex;
+    align-items: center;
+    border-radius: 50%;
+    overflow: hidden;
+    justify-content: center
+}
+
+.scroller-review .navigation {
+    width: 800px
+}
+
+.wrap-svg {
+    width: 35px;
+    height: 35px;
+    background: #fff;
+    box-shadow: 1px 1px 7px #c8c8c8;
+    border-radius: 50%;
+    padding: 7px
+}
+
+.product-right-section img {
+    object-fit: contain !important
+}
+.left-text-galla a{
+    text-decoration: none;
+    z-index: 1;
+    padding-left: 10px;
+}
+
+.reverse-section .mygalla_title{
+    width: 173px;
+}
+.reverse-section .mygalla_desc{
+    width: 553px;
+}
+
+@media(max-width:800px) {
+
+    #radio6:checked~.second,
+    .second {
+        margin-left: 27%
+    }
+
+    .product-right-section {
+        height: 237px
+    }
+
+    .footleft4,
+    .imgs_slides,
+    .mygalla_journey-right,
+    .scroller-review,
+    .scroller-review .navigation,
+    .slider {
+        width: 100%
+    }
+
+    .product-left-text {
+        padding-left: 6vw;
+        width: 100%;
+        gap: 11px
+    }
+
+    .support-yt {
+        width: 96%;
+        height: 217px
+    }
+
+    .product-video iframe,
+    .support-yt iframe {
+        width: 100%;
+        height: 100%
+    }
+
+    .product-left-text h1 {
+        font-size: 31px
+    }
+
+    .mob,
+    .product-left-text h1 br {
+        display: none
+    }
+
+    .mygalla_our-client-img {
+        width: 57px;
+        height: 57px
+    }
+
+    .after-galla-detail-wrap {
+        gap: 8vw
+    }
+
+    .detail-gala-box {
+        gap: 12px;
+        width: 148px
+    }
+
+    .galla-text {
+        width: 98px
+    }
+
+    .galla-text b {
+        text-align: left
+    }
+
+    .galla-text small {
+        text-align: left;
+        font-size: 13px
+    }
+
+    .detail-galla {
+        padding: 35px 9px;
+        gap: 28px
+    }
+
+    .footleft1,
+    .product-section {
+        height: auto
+    }
+
+    .nav {
+        padding: 10px 19px
+    }
+
+    .coustomer-support h2,
+    .coustomer-support p {
+        text-align: center
+    }
+
+    .left-text-galla {
+        padding-left: 22px;
+        padding-right: 16px;
+        width: auto;
+        padding-bottom: 20px;
+    }
+    .what-galla{
+        padding: 40px 0px;
+    }
+    /* .box1-galla {
+        padding-top: 1rem
+    } */
+    .box-galla{
+        gap: 15px;
+        padding-bottom: 40px;
+    }
+    .coustomer-support{
+        padding: 40px 0 !important;
+        padding-bottom: 15px !important;
+
+    }
+
+    .reverse {
+        flex-direction: column-reverse
+    }
+    .scroller-review .navigation{
+        top: 94%;
+    }
+    .scroller-review .imgs_slides{
+        height: 271px;
+    }
+
+    .reverse .circle-div .circle {
+        left: -333px;
+        top: -89px;
+        right: auto
+    }
+
+    .footer {
+        padding: 20px 15px 103px;
+        gap: 23px
+    }
+
+    .foot-left {
+        gap: 14px;
+        padding: 0
+    }
+
+    .foot-left-first-main {
+        gap: 15px
+    }
+
+    .foot-right {
+        gap: 41px
+    }
+
+    .foot-left-second-main {
+        gap: 27px;
+        flex-wrap: wrap
+    }
+
+    .footleft1 p {
+        width: auto
+    }
+
+    .product-video-form {
+        padding: 2rem 1rem;
+        flex-wrap: wrap;
+        gap: 30px;
+        padding-top: 0rem;
+        padding-bottom: 40px;
+    }
+
+    .mygalla_journey-img-wrap {
+        width: 100%;
+        height: 175px;
+        position: relative;
+        top: -7px
+    }
+
+    .mygalla_desc {
+        width: auto !important;
+        height: 200px
+    }
+
+    .mygalla_journey-box-wrap {
+        padding: 1rem 2vw
+    }
+
+    .mygalla_title {
+        padding: 13px 10px;
+        gap: 19px
+    }
+
+    .navigation {
+        width: 100%;
+        margin-top: -3px;
+        top: 92%;
+        left: 0
+    }
+    .scroller-review .navigation{
+        margin-top: -3px !important;
+    }
+    .mygalla_our-client-box-wrap {
+        margin: auto;
+        width: 414px;
+        flex-wrap: wrap
+    }
+    .contact-section{
+        padding-top: 27px;
+    }
+
+    .imgs_slides {
+        height: 251px
+    }
+
+    .mygalla_our-clients .first {
+        margin-left: 31%
+    }
+
+    #radio7:checked~.second {
+        margin-left: -21%
+    }
+
+    #radio8:checked~.second {
+        margin-left: -69%
+    }
+
+    #radio9:checked~.second {
+        margin-left: -118%
+    }
+
+    .bottom-detail p {
+        font-size: 15px
+    }
+
+    .img-top-wrap {
+        width: 60px;
+        height: 60px
+    }
+
+    .product-video {
+        width: 382px;
+        height: 217px
+    }
+
+    .support-p {
+        width: 356px;
+        padding: 10px 0
+    }
+
+    .ancor-demo,
+    .mygalla_our-clients {
+        padding: 0 !important
+    }
+
+    .mygalla_desc p {
+        font-size: 15px
+    }
+    .mygalla_journey-box1{
+        padding: 20px 0px;
+    }
+
+    .ancor-demo {
+        color: #fff !important;
+        border-radius: 30px !important;
+        rotate: 0deg !important;
+        height: 45px !important;
+        font-size: 24px;
+        width: 169px !important;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        background-color: var(--theme-color1) !important;
+    }
+
+    .left-text-galla a{
+        width: 150px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    }
+    .product-form form h2 {
+        font-size: 19px
+    }
+
+    .product-form form .inp1 label {
+        padding-bottom: 5px;
+        font-size: 14px
+    }
+
+    .footleft1 p,
+    .footleft3 span,
+    .footleft4 p,
+    .product-form form .inp1 input {
+        font-size: 16px
+    }
+
+    .mygalla_buy_buisness_tab {
+        gap: 11px
+    }
+
+    .coustomer-support h2 {
+        font-size: 35px
+    }
+
+    .what-galla h2,
+    .why-galla h2 {
+        font-size: 38px
+    }
+
+    .ancor-demo p {
+        height: 100%;
+        display: flex;
+        align-items: center;
+        justify-content: center;
+        font-size: 23px;
+    }
+
+    .foot-last .ancor-wrap {
+        padding: 0 !important;
+        justify-content: flex-end
+    }
+   
+    .foot-last {
+        position: fixed;
+        bottom: 0;
+        right: unset !important;
+        width: 100%;
+        background: #fff;
+        flex-direction: row-reverse;
+        padding: 12px 14px;
+        justify-content: space-around;
+        z-index: 9;
+        display: none
+    }
+
+    .foot-last-icon1 a {
+        width: 42px;
+        height: 42px;
+        display: flex;
+        align-items: center;
+        justify-content: center
+    }
+
+    .foot-last-icon1 a svg {
+        width: 49px;
+        height: 49px
+    }
+
+    .bottom-right-icon1 {
+        width: 45px;
+        height: 45px;
+        padding: 11px
+    }
+
+    .reverse-section .mygalla_journey-left {
+        width: 100%;
+        justify-content: space-between
+    }
+
+    .product-form {
+        width: 415px
+    }
+
+    .mygalla_title {
+        height: 197px
+    }
+
+    .mygalla_buy_buisness_section p {
+        padding: 15px 0
+    }
+
+    .after-galla-box {
+        width: 41vw
+    }
+
+    .mygalla_our-client-box1 {
+        width: 103px;
+        height: 101px
+    }
+
+    .mygalla_our-clients .imgs_slides {
+        height: 278px !important
+    }
+
+    @media(max-width:500px) {
+        .mygalla_title {
+            width: 164px !important
+        }
+
+        .foot-last {
+            display: flex
+        }
+    }
+
+    #radio1:checked~.first {
+        margin-left: 4%
+    }
+
+    #radio2:checked~.first {
+        margin-left: -78%
+    }
+
+    #radio3:checked~.first {
+        margin-left: -128%
+    }
+
+    #radio4:checked~.first {
+        margin-left: -184%
+    }
+
+    .coustomer-support {
+        font-size: 18px
+    }
+
+    .second-scroll-div p {
+        text-align: start
+    }
+    .mygalla_buy_plan_box{
+        padding-bottom: 0;
+    }
+}
+
+.mygalla_buy_hero_section {
+    padding: 4rem 0 3rem 3rem;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    background: #e6f0e8;;
+    flex-wrap: wrap
+}
+
+.mygalla_buy_left-_section {
+    width: 572px;
+    display: flex;
+    flex-direction: column;
+    gap: 20px
+}
+
+.mygalla_buy_left-_section h1 {
+    font-size: 41px
+}
+
+.mygalla_buy_left-_section h1 b {
+    color: var(--theme-color1)
+}
+
+.mygalla_buy_left-_section p {
+    font-size: 16px
+}
+
+.mygalla_buy_right-_section {
+    width: 580px
+}
+
+.mygalla_buy_btns button {
+    background: var(--theme-color1);
+    border: none;
+    padding: 8px 13px;
+    color: #fff;
+    border-radius: 7px
+}
+
+.mygalla_buy_buisness_section {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    padding: 2rem
+}
+
+.mygalla_buy_buisness_img {
+    width: 200px;
+    height: 369px
+}
+
+.mygalla_buy_buisness_img_wrapper {
+    display: flex;
+    align-items: flex-start;
+    background: #d9d9d9;
+    gap: 8px;
+    border-radius: 9px;
+    padding: 4px 11px;
+    align-items: center;
+    height: 36px
+}
+
+.mygalla_buy_buisness_small_img {
+    width: 29px;
+    height: 29px
+}
+
+.mygalla_buy_buisness_small_img img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    mix-blend-mode: darken
+}
+
+.mygalla_buy_buisness_tab {
+    display: flex;
+    flex-direction: column;
+    align-items: center
+}
+
+.mygalla_buy_benefits {
+    display: flex;
+    align-items: center;
+    flex-direction: column;
+    justify-content: center;
+    padding: 1rem
+}
+
+.mygalla_buy_benefits p {
+    width: 681px;
+    text-align: center
+}
+
+.mygalla_buy_benifits_box {
+    padding: 2rem 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    row-gap: 28px
+}
+
+.mygalla_buy_box1 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    width: 257px
+}
+
+.mygalla_buy_img {
+    box-shadow: 0 4px 25px 0 #00000040;
+    background: #fff;
+    width: 49px;
+    height: 49px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 50%
+}
+
+.mygalla_buy_img img {
+    width: 100%;
+    height: 100%;
+    padding: 12px 10px
+}
+
+.mygalla_buy_top_wrap {
+    width: 146px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    background: #c8c8c8;
+    gap: 15px;
+    box-shadow: 1px 1px 9px #d3d3d3;
+    padding-top: 13px
+}
+
+.mygalla_buy_box1 small {
+    background: #fff;
+    padding: 8px 9px;
+    width: 146px;
+    text-align: center;
+    font-size: 13px;
+    height: 45px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    font-weight: 800;
+    color: var(--theme-color1)
+}
+
+.Online.Billing.Software1 img {
+    width: 100%;
+    height: 100%;
+}
+
+.Online.Billing.Software1 {
+    width: 35px;
+    background: #fff;
+    border-radius: 50%;
+    height: 35px;
+    padding: 6px;
+    box-shadow: 1px 1px 5px #bfbfbf;
+}
+.Online.Billing.Software {
+    width: 41px;
+}
+.Online.Billing.Software img {
+    width: 100%;
+    height: 100%;
+}
+
+.mygalla_buy_plans {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    padding: 2rem 4px
+}
+
+.mygalla_buy_plan_box {
+    display: flex;
+    gap: 65px;
+    padding: 35px 0;
+    flex-wrap: wrap;
+    align-items: center;
+    justify-content: center
+}
+
+.mygalla_buy_plan1 {
+    background: #f4ffe2;
+    padding: 10px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    border-radius: 20px
+}
+
+.mygalla_buy_head1 {
+    display: flex;
+    align-items: center;
+    width: 100%;
+    gap: 21px
+}
+
+.mygalla_buy_head_img {
+    box-shadow: 2px 2px 3px gray;
+    width: 50px;
+    height: 50px;
+    background: #fff;
+    border-radius: 50%;
+    padding: 10px;
+    box-shadow: 1px 1px 5px #bfbfbf
+}
+
+.mygalla_buy_head2 {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    padding-bottom: 7px;
+    align-items: center
+}
+
+.mygalla_buy_img1 {
+    width: 30px;
+    height: 30px;
+    background: #fff;
+    padding: 5px;
+    border-radius: 50%;
+    box-shadow: 1px 1px 5px #bfbfbf
+}
+
+.head-small {
+    padding: 10px
+}
+
+.mygalla_buy_plan1 b {
+    color: #000 !important;
+    font-size: 15px
+}
+
+.mygalla_buy_plan1 button {
+    margin: 11px 0;
+    background: var(--theme-color1);
+    color: #fff;
+    font-weight: 600;
+    border: none;
+    padding: 8px;
+    width: 194px;
+    border-radius: 7px;
+    box-shadow: 2px 2px 4px #dfdfdf;
+    font-size: 16px
+}
+
+.mygalla_buy_head1 h2 {
+    font-size: 21px
+}
+
+.span-head {
+    display: flex;
+    gap: 10px;
+    width: 100%;
+    align-items: center;
+    justify-content: center
+}
+
+.mygalla_buy_video_img {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    gap: 14px
+}
+
+.mygalla_buy_video_img1 {
+    width: 127px;
+    height: 111px;
+    border: 1px solid gray;
+    border-radius: 12px;
+    overflow: hidden
+}
+
+.mygalla_buy_now_frame-wrapper h1 {
+    color: var(--theme-color1);
+    text-align: center;
+    font-size: 37px
+}
+
+.mygalla_buy_video_wrap {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding: 2rem 0
+}
+
+.mygalla_buy_item_box1 {
+    display: flex;
+    align-items: center;
+    gap: 15px
+}
+
+.mygalla_buy_box_img1 {
+    width: 53px;
+    height: 53px;
+    box-shadow: 0 4px 4px 0 #00000080;
+    border-radius: 50%;
+    position: relative;
+    left: 34px;
+    background: #fff;
+    padding: 10px;
+    display: flex;
+    align-items: center;
+    justify-content: center
+}
+
+.mygalla_buy_video_left {
+    display: flex;
+    flex-direction: column;
+    gap: 41px;
+    width: 434px
+}
+
+.mygalla_label {
+    display: flex;
+    flex-direction: column;
+    gap: 5px
+}
+
+.mygalla_buy_iframe-wrap {
+    width: 544px;
+    height: 251px;
+    margin-bottom: 15px
+}
+
+.mygalla_buy_now_frame-wrapper {
+    background: #43aB131A;
+    padding: 10px
+}
+
+.mygalla_buy_item_box1 p {
+    height: 54px;
+    display: flex;
+    align-items: center;
+    background: var(--theme-color1);
+    color: #fff;
+    font-size: 14px;
+    padding: 5px 32px;
+    width: 81%;
+    font-weight: 700;
+    border-radius: 15px;
+    text-align: left
+}
+.footleft4{
+    width: 35%;
+}
+
+@media(max-width:500px) {
+    .mygalla_buy_plans {
+        padding: 2rem 4px;
+        padding-top: 0;
+    }
+
+    .mygalla_buy_hero_section {
+        padding: 4rem 0 1rem 1rem
+    }
+
+    .mygalla_buy_left-_section h1,
+    .mygalla_buy_now_frame-wrapper h1 {
+        font-size: 32px
+    }
+
+    .mygalla_buy_buisness_section {
+        padding: 2rem 0;
+        padding-bottom: 20px;
+    }
+
+    .mygalla_buy_buisness_section h1,
+    .mygalla_buy_buisness_section p {
+        text-align: center
+    }
+
+    .mygalla_buy_buisness_img {
+        width: 174px;
+        height: 307px
+    }
+
+    .mygalla_buy_top_wrap {
+        width: 38vw
+    }
+
+    .mygalla_buy_box1 small {
+        width: 100%
+    }
+
+    .mygalla_buy_buisness_img_wrap {
+        row-gap: 24px
+    }
+
+    .mygalla_buy_buisness_img_wrapper {
+        width: 118px;
+        justify-content: center
+    }
+
+    .mygalla_buy_benifits_box,
+    .mygalla_buy_plan_box {
+        gap: 30px
+    }
+
+    .mygalla_buy_box1 {
+        width: auto
+    }
+
+    .mygalla_buy_benefits p {
+        width: auto;
+        padding: 10px 0 0;
+        font-size: 15px
+    }
+
+    .mygalla_buy_benefits h1 {
+        font-size: 37px
+    }
+
+    .mygalla_buy_iframe-wrap {
+        width: 351px;
+        height: 173px
+    }
+
+    .mygalla_buy_video_img {
+        padding-bottom: 26px
+    }
+
+    .mygalla_buy_video_img1 {
+        width: 77px;
+        height: 75px
+    }
+
+    .mygalla_buy_item_box1 p {
+        width: 100%;
+        position: relative;
+        left: -13px
+    }
+
+    .mygalla_buy_box_img1 {
+        width: 62px;
+        height: 53px;
+        z-index: 1;
+        position: unset
+    }
+
+    .mygalla_buy_item_box1 {
+        gap: 0
+    }
+
+    .mygalla_buy_video_right {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 100%
+    }
+    .contact-detail1_phone{
+        border:none
+    }
+    .contact-detail-div{
+        padding: 0;
+    }
+
+    .contact-section,
+    .coustomer-support,
+    .mygalla_buy_video_wrap,
+    .mygalla_our-clients {
+        padding: 1rem 0
+    }
+
+    .mygalla_buy_plan1 {
+        width: 88%
+    }
+
+    .mygalla_buy_head1 {
+        gap: 46px
+    }
+
+    .span-head {
+        justify-content: center
+    }
+    .minor_update{
+        height: 320px;
+
+    }
+    .mygalla_our-journey h2 {
+        font-size: 36px;
+    }
+    .foot-last-icon1{
+        padding: 0px 6px 5px;
+    }
+    .bottom-right{
+        padding: 0;
+    }
+    .top-right p{
+        font-size: 16px;
+    }
+    
+}
+.nav2 a{
+    font-size: 18px !important;
+}
+
+
+
+/* Thankyou page */
+
+.mygala_buisness_thanks_page{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    gap: 22px;
+    padding: 6rem 0px;
+        padding-bottom: 0rem;
+
+}
+.thanks_icon{
+    padding-top :0px;
+}
+.mygala_buisness_thanks_page button{
+    background: var(--theme-color1);
+    color: #fff;
+    padding: 11px 5px;
+    border: none;
+    border-radius: 6px;
+    width: 317px;
+    font-size: 14px;
+
+}
+.mygalla_buisness_thanks_img{
+      width: 243px;
+    height: 390px;
+}
+.mygalla_buisness_thanks_img img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.mygala_buisness_thanks_text{
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        gap: 11px;
+        text-align: center;
+}
+.mygala_buisness_thanks_text small{
+    width: 800px;
+    font-weight: 600;
+    font-size: 15px;
+
+}
+.mygala_buisness_thanks_text p{
+       font-weight: 700;
+    font-size: 21px;
+}
+.mygalla_buisness_yt_frame{
+    display: flex;
+    align-items: center;
+    flex-wrap: wrap;
+    justify-content: center;
+}
+.mygalla_buisness_video{
+    width: 372px;
+    height: 211px;
+    padding: 13px;
+}
+.mygalla_buisness_video iframe{
+    width: 100%;
+    height: 100%;
+}
+.mygalla_modal{
+    position: fixed;
+    height: 100%;
+    width: 100%;
+    top: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background: #171717c2;
+    /* padding: 3rem; */
+    margin-top: 42px;
+}
+.mygalla_buisness_gallery {
+       /* display: inline-flex; */
+    /* align-items: center; */
+    /* justify-content: center;
+    width: 375px;
+    overflow-x: scroll; */
+    /* background: #fff; */
+    /* white-space: nowrap; */
+}
+/* .mygalla_buisness_img1{
+    width: 355px;
+    display: inline-block;
+    padding: 25px;
+    height: 382px;
+} */
+
+.mygalla_buisness_img1{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+    border-radius: 8px;
+    width: 447px;
+}
+.mygalla_buisness_img1 img{
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+.scroller-div{
+    display: inline-flex;
+    transition: cubic-bezier(0.19, 1, 0.22, 1) 1s;
+    gap: 12px;
+    white-space: nowrap;
+    padding: 23px 10px;
+    align-items: center;
+    justify-content: center;
+    
+}
+.scroller{
+    width: 41%;
+    overflow-x: auto;
+    white-space: nowrap;
+}
+.scroller::-webkit-scrollbar{
+    display: none;
+}
+.wrap-img {
+    width: 239px;
+    height: auto;
+}
+.btn-container{
+    position: absolute;
+}
+.btn-container button
+{
+position: absolute;
+background: transparent;
+right: 250px;
+color: #fff;
+border: none;
+}
+.btn-container button svg
+{
+    width: 42px;
+    height: 31px;
+}
+#prevBtn{
+    position: absolute;
+    right: 250px;
+}
+#nextBtn{
+        position: absolute;
+    left: 279px;
+}
+.cut_svg{
+    position: absolute;
+    color: #fff;
+    top: 39px;
+    right: 39px;
+    width: 30px;
+    height: 30px;
+}
+#modal_wrap{
+    display: none;
+}
+
+.mygalla_buisness_gallery_low {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    gap: 7px;
+}
+ .mygalla_buisness_img1_low {
+    width: 120px;
+    height: 113px;
+}
+.mygalla_buisness_img1_low img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} 
+.hide{
+    padding-bottom: 28px;
+}
+
+@media(max-width:600px) {
+    .mygala_buisness_thanks_text p{
+        font-size: 22px;
+        font-weight: 700;
+    }
+.mygala_buisness_thanks_text small{
+    width: auto;
+    font-weight: 700;
+    font-size: 17px;
+    
+
+}
+.mygala_buisness_thanks_text{
+    padding: 0px 10px;
+}
+.mygalla_journey-left{
+    gap: 23px;
+}
+.reverse_section_text_img_section{
+    left: 7px;
+    width: 52vw;
+
+}
+}
+.mygalla_ancor_data{
+        width: 136px;
+    height: 53px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+.mygalla_ancor_data img{
+        width: 100%;
+    height: 100%;
+    object-fit: cover;
+}
+
+
+ /* .mygalla_buisness_gallery_low {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-wrap: wrap;
+    GAP: 8PX;
+    padding: 0px 119px;
+}
+.mygalla_buisness_img1_low {
+    width: 142px;
+    height: 200px;
+}
+.mygalla_buisness_img1_low img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+} */
