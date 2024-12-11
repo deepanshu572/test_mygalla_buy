@@ -343,6 +343,16 @@
 .mygalla_buy_left_sec{
   flex-wrap: wrap;
 }
+.buy_btn2{
+  border: 1px solid var(--theme-color1) !important;
+
+}
+.buy_btn1,
+.buy_btn3{
+  background: transparent !important;
+    border: 1px solid var(--theme-color1) !important;
+    color: var(--theme-color1) !important;
+}
 @media screen and (min-width: 600px) {
   .span_txt {
     width: 15%;
@@ -350,6 +360,8 @@
 }
 }
 @media screen and (max-width: 600px) {
+
+
   .mygalla_buy_box_img1{
     width: 53px;
     height: 53px;
@@ -360,6 +372,12 @@
   .mygalla_buy_left_sec{
     gap: 30px;
     row-gap: 7px;
+  }
+  .mygalla_buy_left_sec {
+    display: grid
+    ;
+    grid-template-columns: repeat(3, 28vw);
+
   }
   .mygalla_buy_premium_content hr{
     margin: 5px 0;
@@ -375,13 +393,16 @@
     font-size: 13px;
   }
   .span_txt b{
-    font-size: 10px;
+    font-size: 7px;
   }
   .span_txt img {
     width: 13px;
 }
   .popular1 button{
-  margin-top: 4px;
+  margin-top: 10px;
+}
+  .popular2 button{
+  margin-top: 14px;
 }
   .most_popular{
     font-size: 11px;
@@ -425,10 +446,11 @@
  
   .span_txt {
         display: flex;
-        justify-content: center;
+        justify-content: start;
         align-items: center;
         text-align: center;
         gap: 11px;
+        white-space: nowrap;
   }
   .mygalla_buy_head2{
     font-size: 8px;
@@ -436,6 +458,7 @@
 }
 .mygalla_buy_last_plan{
     font-size: 10px;
+    margin-top: 10px;
 }
 .mygalla_buy_plan1 button{
     width: 100px;
@@ -473,7 +496,8 @@
   font-size: 8px;
 }
 .mygalla_buy_head2 svg{
-  width: 8px;
+  width: 6px;
+  height: 14px;
 }
 .mygalla_buy_plan_box{
   position: relative;
@@ -505,11 +529,47 @@
 
 }
 .mygalla_buy_head2 small{
-  font-size: 8px;
+  font-size: 7px;
 }
 .buy_disc_sec img{
   width: 30px;
 }
+.mygalla_buy_last_plan p{
+    /* font-size: 7px; */
+    height: 44px;
+  }
+#plans1 .mygalla_buy_last_plan p{
+    font-size: 8px;
+    height: 44px;
+  }
+#plans2 .mygalla_buy_last_plan p{
+    font-size: 8px;
+    height: 44px;
+  }
+#plans3 .mygalla_buy_last_plan p{
+    font-size: 8px;
+    /* height: 44px; */
+    line-height: 10px;
+  }
+  .populars{
+    height: 469px !important;
+  }
+  .buy_btn2{
+    /* margin-bottom: 0 !important; */
+    /* margin-top: 23px !important; */
+  }
+  /* #plans2 .mygalla_buy_last_plan{
+    position: relative;
+    top: 17px;
+  } */
+  /* #mygalla_buy_wrap_head2{
+    position: relative;
+    top: 15px;
+  } */
+   #plans1 .mygalla_buy_new_plan_upgrade{
+    padding-bottom: 6px;
+   }
+
 }
   </style>
   <!-- new css -->
@@ -1826,7 +1886,7 @@
           </div>
           <div class="mygalla_buy_head2">
           ${val.svgWrong3}
-            <small>${val.desc11}</small>
+            <small style="    WHITE-SPACE: nowrap;">${val.desc11}</small>
           </div>
           <div class="mygalla_buy_head2">
           ${val.svgWrong4}
@@ -1843,7 +1903,7 @@
             ${val.mainDesc}
             </p>
           </div>
-          <button data-bs-toggle="modal" data-bs-target="#payModal" 
+          <button class="buy_btn${idData}" data-bs-toggle="modal" data-bs-target="#payModal" 
           data-bs-amount=${val.button[1]}>${val.button[0]}</button>
         </div>
         </div>
