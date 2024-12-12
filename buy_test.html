@@ -421,6 +421,20 @@
 }
 }
 @media screen and (max-width: 600px) {
+  .button_start button{
+    margin: 0 !important;
+  }
+  .buy_btn1 {
+    position: relative;
+    top: -5px;
+  }
+  .button_start {
+    display: flex
+;
+    align-items: center;
+    justify-content: center;
+    height: 47px;
+}
   .buy_disc_sec{
   height: 24px;
   width: 30px;
@@ -471,7 +485,7 @@
     width: 13px;
 }
   .popular1 button{
-  margin-top: 14px;
+  margin-top: 6px;
 }
   .popular2 button{
   margin-top: 14px;
@@ -2050,7 +2064,7 @@
             ${val.mainDesc}
             </p>
           </div>
-           ${val.button}
+         <div class="button_start">  ${val.button}</div>
           
         </div>
         </div>
