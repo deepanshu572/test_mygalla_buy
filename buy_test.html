@@ -359,6 +359,61 @@
     border: 1.5px solid var(--theme-color1) !important;
     color: var(--theme-color1) !important;
 }
+.modal_middle_sec h1{
+  font-size: 20px;
+}
+.modal_wrapper .modal-header{
+  
+  /* background: var(--theme-color1); */
+    color: #fff;
+    gap: 15px;
+    color: #fff;
+    background: rgb(97, 115, 137);
+    /* background: #3bae00; */
+
+}
+.modal_wrapper .modal-header button  svg{
+  fill: #fff;
+}
+.modal_wrapper .modal-header button{
+  background: transparent;
+    position: relative;
+    display: flex
+;
+    /* color: #fff; */
+    opacity: 1;
+}
+.modal_img img{
+  width: 45px;
+}
+.modal_wrapper .modal-body input{
+  box-shadow: unset;
+  outline: none;
+}
+.modal_wrapper .modal-footer {
+  padding: 10px;
+    border: 0;
+    padding-top: 0;
+    justify-content: center;
+}
+.modal_wrapper .modal-footer button{
+  margin: 0;
+    width: 27vw;
+    /* background: #3bae00;
+    color: #fff; */
+    background: #2fbe6d;
+    color: #fff;
+    border: 1px solid #2fbe6d;
+}
+.modal_wrapper .modal-body h2{
+  font-size: 17px !important;
+    font-weight: 500;
+    margin-bottom: 9px !important;
+}
+.modal_wrapper .modal-body small{
+  color: #717d8b;
+  font-size: 14px;
+}
 @media screen and (min-width: 600px) {
   .span_txt {
     width: 15%;
@@ -366,6 +421,10 @@
 }
 }
 @media screen and (max-width: 600px) {
+  .buy_disc_sec{
+  height: 24px;
+  width: 30px;
+}
   .mygalla_buy_left-_section h1 {
     font-size: 7vw;
   }
@@ -412,7 +471,7 @@
     width: 13px;
 }
   .popular1 button{
-  margin-top: 10px;
+  margin-top: 14px;
 }
   .popular2 button{
   margin-top: 14px;
@@ -582,6 +641,13 @@
    #plans1 .mygalla_buy_new_plan_upgrade{
     padding-bottom: 6px;
    }
+   .minor_update{
+    height: auto;
+   }
+   .mygalla_buy_buisness_img
+{
+  height: auto;
+}
 
 }
   </style>
@@ -792,7 +858,10 @@
         </div>
       
           <div class="mygalla_buy_btn_talk">
-          <button>Talk To Our Expert</button>
+
+
+             
+          <button data-bs-toggle="modal" data-bs-target="#exampleModal">Talk To Our Expert</button>
         </div>
       </div>
     </div>
@@ -1578,38 +1647,100 @@
 
 
   <div class="modal fade" id="payModal" tabindex="-1" aria-labelledby="payModalLabel" aria-hidden="true">
-    <div class="modal-dialog">
+    <div class="modal-dialog modal_wrapper">
       <div class="modal-content">
         <div class="modal-header">
-          <h1 class="modal-title fs-5" id="payModalLabel">Pay Now</h1>
-          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+          <div class="modal_img">
+            <img src="https://play-lh.googleusercontent.com/O8YXw-xc0fEVbedRdJ-ZRdoV3udxuGdeCw8jCfuRNHabGZM6ozZ8iDHFGdBJ7i0dK7U=w240-h480-rw">
+        </div>
+              <div class="modal_middle_sec">
+        <h1>
+    Paying To
+    My galla</h1>
+    </div>
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+            <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+              <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+            </svg>
+          </button>
         </div>
         <div class="modal-body">
+          <small>Amount</small>
+          <h2 class="modal-title" id="payModalLabel">Pay</h2>
           <div>
             <input type="text" id="amount" hidden>
             <div class="mb-3">
               <label for="name" class="col-form-label">Name:</label>
               <input type="text" class="form-control" id="name">
+              <small id="nameErr"></small>
             </div>
             <div class="mb-3">
-              <label for="name" class="col-form-label">Mobile:</label>
+              <label for="mobile" class="col-form-label">Mobile:</label>
               <input type="number" class="form-control" id="mobile">
+              <small id="mobileErr"></small>
             </div>
             <div class="mb-3">
-              <label for="name" class="col-form-label">Email:</label>
+              <label for="email" class="col-form-label">Email:</label>
               <input type="text" class="form-control" id="email">
+              <small id="emailErr"></small>
             </div>
           </div>
         </div>
         <div class="modal-footer">
-          <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
-          <button type="button" class="btn btn-primary" onclick="paynow()">PAY</button>
+          <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+          <button type="button" class="btn" onclick="paynow()">PAY</button>
         </div>
       </div>
     </div>
   </div>
 
 
+
+  <!-- Modal -->
+              <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+                <div class="modal-dialog modal_wrapper">
+                  <div class="modal-content">
+                    <div class="modal-header">
+                      <div class="modal_img">
+                        <img src="https://play-lh.googleusercontent.com/O8YXw-xc0fEVbedRdJ-ZRdoV3udxuGdeCw8jCfuRNHabGZM6ozZ8iDHFGdBJ7i0dK7U=w240-h480-rw">
+                    </div>
+                          <div class="modal_middle_sec">
+                    <h1>
+                My galla</h1>
+                </div>
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
+                  <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg" viewBox="0 0 16 16">
+                    <path d="M2.146 2.854a.5.5 0 1 1 .708-.708L8 7.293l5.146-5.147a.5.5 0 0 1 .708.708L8.707 8l5.147 5.146a.5.5 0 0 1-.708.708L8 8.707l-5.146 5.147a.5.5 0 0 1-.708-.708L7.293 8z"/>
+                  </svg>
+                </button>
+
+                      
+                    </div>
+                    <div class="modal-body">
+                    
+                      <div>
+                        <input type="text" id="amount" hidden>
+                        <div class="mb-3">
+                          <label for="nameSub" class="col-form-label">Name:</label>
+                          <input type="text" class="form-control" id="nameSub" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="mobileSub" class="col-form-label">Mobile:</label>
+                          <input type="number" class="form-control" id="mobileSub" required>
+                        </div>
+                        <div class="mb-3">
+                          <label for="emailSub" class="col-form-label">Email:</label>
+                          <input type="text" class="form-control" id="emailSub" required>
+                        </div>
+                      </div>
+                    </div>
+                    <div class="modal-footer">
+                      <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
+                      <button type="button" class="btn">SUBMIT</button>
+                    </div>
+                  </div>
+                </div>
+              </div>
 
   <script>
 
@@ -1630,7 +1761,7 @@
     //QbBpo1zv3TM
     const players = [
       { id: 'player1', videoId: 'mrnB45pgnH8', player: null },
-      { id: 'player2', videoId: 'QbBpo1zv3TM', player: null },
+      { id: 'player2', videoId: '4cG-R_We5sQ', player: null },
 
 
     ];
@@ -1731,6 +1862,7 @@
     const dataPay = [
        {
         heading: 'Lifetime FREE',
+        discimg : false,
         headImg: 'Assests/img/plan_head1.png',
         subheading : 'For small Shops' , 
         price : 'Free',
@@ -1754,7 +1886,7 @@
         svgWrong3 : svgData,
         svgWrong4 : svgData,
         svgWrong5 : svgData,
-        button :  ['Start For free', '0'] ,
+        button : '<button class="buy_btn1" onclick=location.href="https://play.google.com/store/apps/details?id=com.softwarezsolution.app">Start For free</button>',
         mainDesc : 'Best for small shop owners with simple needs—bill and sell online,&nbsp;all&nbsp;in&nbsp;one&nbsp;app', 
         popular : false,
         disc: 'Assests/img/disc.png',
@@ -1763,11 +1895,12 @@
 
        {
         heading: 'STARTUP',
+        discimg : true,
         headImg: 'Assests/img/plan_head2.png',
         subheading : 'For growing shops' ,
         price : '₹6000',
         planTime  : 'Yearly',
-        fprice:' ₹ 20,000',
+        fprice:' ₹ 12,000',
         desc1 : 'My Galla App',
         desc2 : 'Website on My Galla',
         desc3 : 'Billing POS',
@@ -1787,7 +1920,7 @@
         svgWrong3 : '✔',
         svgWrong4 : svgData,
         svgWrong5 : svgData,
-        button :  ['Upgrade Now', 6000] ,
+        button : '<button class="buy_btn2" data-bs-toggle="modal" data-bs-target="#payModal" data-bs-amount="6000">Upgrade Now</button>',
         mainDesc : 'Take your startup to the next level with all-in-one app for billing, online selling, & staff handling.',
         popular : true,
         disc: 'Assests/img/disc.png',
@@ -1795,10 +1928,11 @@
       },
        {
         heading: 'BUISNESS',
+        discimg : true,
         headImg: 'Assests/img/plan_head3.png',
         subheading : 'For mart, malls, & big shops' ,
         price : '₹ 24,000',
-        fprice:'₹ 40,000', 
+        fprice:'₹ 80,000', 
         planTime  : 'Yearly',
         desc1 : 'OWN BRAND APP',
         desc2 : 'Custom Domain',
@@ -1819,7 +1953,7 @@
         svgWrong3 : '✔',
         svgWrong4 : svgData,
         svgWrong5 : svgData,
-        button :  ['Buy Now', 20000] ,
+        button : '<button class="buy_btn3" data-bs-toggle="modal" data-bs-target="#payModal" data-bs-amount="24000">Buy Now</button>',
         mainDesc : 'Your business, your way! A personalized app for billing, online selling, and staff handling designed for entrepreneurs.',
         popular : false,
         disc: 'Assests/img/disc.png',
@@ -1849,8 +1983,8 @@
               <small>${val.planTime ? val.planTime : ' '}</small>
               <del>${val.fprice}</del>
               <div class="buy_disc_sec">
-                  <p>${val.discVal}% off</p>
-                  <img src="${val.disc}" alt=""></div>
+                ${val.discimg ? `<p>${val.discVal}% off</p><img src="${val.disc}" alt="">` : ""}
+                </div>
             </span>
           </div>
           <b class="mygalla_bold_pay">Standard Features</b>
@@ -1899,7 +2033,7 @@
           </div>
           <div class="mygalla_buy_head2">
           ${val.svgWrong3}
-            <small style="    WHITE-SPACE: nowrap;">${val.desc11}</small>
+            <small style="WHITE-SPACE: nowrap;">${val.desc11}</small>
           </div>
           <div class="mygalla_buy_head2">
           ${val.svgWrong4}
@@ -1916,8 +2050,8 @@
             ${val.mainDesc}
             </p>
           </div>
-          <button class="buy_btn${idData}" data-bs-toggle="modal" data-bs-target="#payModal" 
-          data-bs-amount=${val.button[1]}>${val.button[0]}</button>
+           ${val.button}
+          
         </div>
         </div>
         `  
@@ -1958,11 +2092,6 @@
         "img" : "Assests/img/plan_icon6.png",
         "color": true
       },
-      /* {
-        "name":"Reports",
-        "img" : "Assests/img/plan_icon7.png",
-        "color": true
-      }, */
       {
         "name":"Add Staff",
         "img" : "Assests/img/plan_icon8.png",
@@ -1973,11 +2102,6 @@
         "img" : "Assests/img/plan_icon9.png",
         "color": true
       },
-      /* {
-        "name":"Support",
-        "img" : "Assests/img/plan_icon10.png",
-        "color": true
-      }, */
       {
         "name":"Dedicated Support Manager",
         "img" : "Assests/img/plan_icon11.png",
@@ -2026,6 +2150,13 @@
       const email = document.getElementById("email").value;
       const mobile = document.getElementById("mobile").value;
       const amount = document.getElementById("amount").value;
+
+      var nameErr = document.querySelector('#nameErr');
+      var emailErr = document.querySelector('#emailErr');
+      var mobileErr = document.querySelector('#mobileErr');
+      console.log(nameErr);
+      
+      
 
       const formData = new FormData();
       formData.append("name", name);
