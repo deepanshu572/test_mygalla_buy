@@ -135,14 +135,11 @@
       display: flex;
       align-items: center;
       gap: 6px;
-      height: 15px;
       margin-top: 5px;
+      height: 35px;
     }
 
-    .mygalla_buy_top_sec del {
-      font-size: 7px;
-      height: 4px;
-    }
+    
 
     .mygalla_buy_plan1 button {
       margin: 11px auto;
@@ -426,7 +423,7 @@
     .modal_wrapper .modal-header {
 
       /* background: var(--theme-color1); */
-      background: #0ca12b;
+      background: #098924;
       color: #fff;
       gap: 15px;
       color: #fff;
@@ -467,7 +464,7 @@
       margin: 0;
       width: 88vw;
       background: var(--theme-color1);
-      background: #0ca12b;
+      background: #098924;
     color: #fff;
       /* background: #2fbe6d; */
       color: #fff;
@@ -476,7 +473,7 @@
 
     .modal_wrapper .modal-body h2 {
       font-size: 17px !important;
-      font-weight: 500;
+      font-weight: 800;
       margin-bottom: 9px !important;
     }
 
@@ -516,7 +513,7 @@
       top: 50%;
       left: 0.5rem;
       padding: 0 4px;
-      color: #ddd;
+      color: black;
       font-size: 1em;
       font-weight: 100;
       pointer-events: none;
@@ -532,6 +529,14 @@
       background: #fff;
 
     }
+    .mygalla_buy_top_sec del {
+        font-size: 13px;
+        height: 10px;
+    }
+    .amt{
+      display: flex;
+        gap: 7px;
+    }
 
     @media screen and (min-width: 600px) {
       .span_txt {
@@ -546,6 +551,14 @@
     }
 
     @media screen and (max-width: 790px) {
+    
+      .mygalla_buy_top_sec span{
+        height: 15px;
+      }
+      .mygalla_buy_top_sec del {
+      font-size: 7px;
+      height: 4px;
+    }
       .gstAmt {
         font-size: 7px;
         position: relative;
@@ -1868,24 +1881,28 @@
         </div>
         <div class="modal-body input_wrap_body">
           <small>Amount</small>
-          <h2 class="modal-title" id="payModalLabel">Pay</h2>
+          <div class="amt">
+            Pay
+          <h2 class="modal-title" id="payModalLabel"> ₹</h2>
+          <div id="customMessage"></div>
+        </div>
           <div>
             <input type="text" id="amount" hidden>
             <div class="mb-3">
               <div class="form-group form_update">
-                <input type="text" class="form-control" id="name" required="">
+                <input type="text" class="form-control inps" id="name" required="">
                 <label for="name" class="col-form-label" >Name</label>
               </div>
             </div>
             <div class="mb-3">
               <div class="form-group form_update">
-                <input type="number" class="form-control" id="mobile" required="">
+                <input type="number" class="form-control inps" id="mobile" required="">
                 <label for="mobile" class="col-form-label">Mobile</label>
               </div>
             </div>
             <div class="mb-3">
               <div class="form-group  form_update">
-                <input type="text" class="form-control" id="email"required="">
+                <input type="text" class="form-control inps" id="email"required="">
                 <label for="email" class="col-form-label">Email</label>
               </div>
             </div>
@@ -2144,7 +2161,7 @@
         svgWrong3: '✔',
         svgWrong4: svgData,
         svgWrong5: svgData,
-        button: '<button class="buy_btn2" data-bs-toggle="modal" data-bs-target="#payModal" data-bs-amount="₹7080 (Product: ₹6000 + GST: ₹1080)">Upgrade Now</button>',
+        button: '<button class="buy_btn2" data-bs-toggle="modal" data-bs-target="#payModal" data-bs-amount="7080">Upgrade Now</button>',
         mainDesc: 'Take your startup to the next level with all-in-one app for billing, online selling, & staff handling.',
         popular: true,
         disc: 'Assests/img/disc.png',
@@ -2178,7 +2195,7 @@
         svgWrong3: '✔',
         svgWrong4: svgData,
         svgWrong5: svgData,
-        button: '<button class="buy_btn3" data-bs-toggle="modal" data-bs-target="#payModal" data-bs-amount="₹28320 (Product: ₹24000 + GST: ₹4320)">Buy Now</button>',
+        button: '<button class="buy_btn3" data-bs-toggle="modal" data-bs-target="#payModal" data-bs-amount="28320">Buy Now</button>',
         mainDesc: 'Your business, your way! A personalized app for billing, online selling, and staff handling designed for entrepreneurs.',
         popular: false,
         disc: 'Assests/img/disc.png',
@@ -2286,7 +2303,8 @@
 
     document.getElementById('planSection').innerHTML = data;
 
-
+    // var btn1 = document.querySelector('buy_btn2');
+    
     const CoustomData = [
       {
         "name": "Own Brand App",
@@ -2365,9 +2383,15 @@
         const button = event.relatedTarget;
         const amount = button.getAttribute('data-bs-amount');
         const modalTitle = payModal.querySelector('.modal-title');
-        modalTitle.textContent = `Pay ${amount}`;
+        modalTitle.textContent = `${amount}`;
         document.getElementById("amount").value = amount;
-      })
+
+      if (amount === '28320') { // Compare as a string since `getAttribute` returns a string
+      document.getElementById("customMessage").textContent = " (Product: ₹24000 + GST: ₹4320)";
+    } else if(amount === '7080') {
+      document.getElementById("customMessage").textContent = " (Product: ₹6000 + GST: ₹1080)";
+    }
+  });
     }
 
     async function paynow() {
@@ -2377,16 +2401,33 @@
       const mobile = document.getElementById("mobile").value;
       const amount = document.getElementById("amount").value;
 
-      var fieldErr = document.querySelectorAll('.fieldErr');
+      var fieldErr = document.querySelectorAll('.inps');
       console.log(fieldErr);
 
       if (name === "" || email === "" || mobile === "") {
         fieldErr.forEach((err) => {
-          err.textContent = "Fields are required.";
+          // err.textContent = "Fields are required.";
+          err.style.border = "1px solid red";
+           
         });
 
         return false;
       }
+//       if (name === "" || email === "" || mobile === "") {
+//     fieldErr.forEach((err) => {
+//         if (err.value.trim() === "") {
+//             err.style.border = "1px solid red"; // Apply red border for empty fields
+//         } else {
+//             err.style.border = "1px solid green"; // Remove border if the field is filled
+//         }
+//     });
+//     return false;
+// } else {
+//     fieldErr.forEach((err) => {
+//         err.style.border = "1px solid green"; // Ensure all fields have no border when valid
+//     });
+//     return true;
+// }
 
       const formData = new FormData();
       formData.append("name", name);
