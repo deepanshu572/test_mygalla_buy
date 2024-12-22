@@ -451,6 +451,7 @@
     .modal_wrapper .modal-body input {
       box-shadow: unset;
       outline: none;
+      color: black;
     }
 
     .modal_wrapper .modal-footer {
@@ -536,6 +537,15 @@
     .amt{
       display: flex;
         gap: 7px;
+    }
+    .amt span{
+      display: flex;
+      /* align-items: center; */
+    }
+    .btn-data_modal{
+      display: flex;
+      gap: 3px;
+      justify-content: center;
     }
 
     @media screen and (min-width: 600px) {
@@ -1869,7 +1879,7 @@
           <div class="modal_middle_sec">
             <h1>
               Paying To
-              My galla</h1>
+              My Galla</h1>
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
@@ -1882,8 +1892,8 @@
         <div class="modal-body input_wrap_body">
           <small>Amount</small>
           <div class="amt">
-            Pay
-          <h2 class="modal-title" id="payModalLabel"> ₹</h2>
+            Pay 
+         <span>₹<h2 class="modal-title" id="payModalLabel"> </h2></span> 
           <div id="customMessage"></div>
         </div>
           <div>
@@ -1925,7 +1935,7 @@
         </div>
         <div class="modal-footer">
           <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-          <button type="button" class="btn" onclick="paynow()">PAY</button>
+          <button type="button" class="btn btn-data_modal" onclick="paynow()">PAY ₹ <p  id="payData"></p></button>
         </div>
       </div>
     </div>
@@ -1944,7 +1954,7 @@
           </div>
           <div class="modal_middle_sec">
             <h1>
-              My galla</h1>
+              My Galla</h1>
           </div>
           <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close">
             <svg xmlns="http://www.w3.org/2000/svg" width="16" height="16" fill="currentColor" class="bi bi-x-lg"
@@ -1960,23 +1970,43 @@
 
           <div>
             <input type="text" id="amount" hidden>
-            <div class="mb-3">
+            <!-- <div class="mb-3">
               <label for="nameSub" class="col-form-label">Name:</label>
-              <input type="text" class="form-control" id="nameSub" required>
+              <input type="text" class="form-control inpsSub" id="nameSub" required>
             </div>
             <div class="mb-3">
               <label for="mobileSub" class="col-form-label">Mobile:</label>
-              <input type="number" class="form-control" id="mobileSub" required>
+              <input type="number" class="form-control inpsSub" id="mobileSub" required>
             </div>
             <div class="mb-3">
               <label for="emailSub" class="col-form-label">Email:</label>
-              <input type="text" class="form-control" id="emailSub" required>
+              <input type="text" class="form-control inpsSub" id="emailSub" required>
+            </div> -->
+
+
+            <div class="mb-3">
+              <div class="form-group form_update">
+                <input type="text" class="form-control inpsSub" id="nameSub" required="">
+                <label for="name" class="col-form-label" >Name</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-group form_update">
+                <input type="number" class="form-control inpsSub" id="mobileSub" required="">
+                <label for="mobile" class="col-form-label">Mobile</label>
+              </div>
+            </div>
+            <div class="mb-3">
+              <div class="form-group  form_update">
+                <input type="text" class="form-control inpsSub" id="emailSub" required="">
+                <label for="email" class="col-form-label">Email</label>
+              </div>
             </div>
           </div>
         </div>
         <div class="modal-footer">
           <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-          <button type="button" class="btn">SUBMIT</button>
+          <button type="button" class="btn" onclick="submitData()" >SUBMIT</button>
         </div>
       </div>
     </div>
@@ -1984,15 +2014,15 @@
 
   <script>
 
-    document.addEventListener("DOMContentLoaded", function (e) {
-      //  console.log("hello");
-      document.getElementById('myButton').click();
-      setTimeout(() => {
-        document.getElementById('myButton').click();
+    // document.addEventListener("DOMContentLoaded", function (e) {
+    //   //  console.log("hello");
+    //   document.getElementById('myButton').click();
+    //   setTimeout(() => {
+    //     document.getElementById('myButton').click();
 
-      }, 6000);
+    //   }, 6000);
 
-    });
+    // });
   </script>
   <script>
 
@@ -2377,13 +2407,45 @@
 
 
   <script>
-    const payModal = document.getElementById('payModal')
+
+     function submitData() {
+      const name = document.getElementById("nameSub").value;
+      const email = document.getElementById("emailSub").value;
+      const mobile = document.getElementById("mobileSub").value;
+
+
+      var fieldErr = document.querySelectorAll('.inpsSub');
+      // console.log(fieldErr);
+
+      if (name === "" || email === "" || mobile === "") {
+        fieldErr.forEach((err) => {
+          // err.textContent = "Fields are required.";
+          err.style.border = "1px solid red";
+           
+        });
+
+
+      }
+      else{
+        fieldErr.forEach((err) => {
+          // err.textContent = "Fields are required.";
+          err.style.border = "1px solid #dee2e6";
+           
+        });
+      }
+     }
+      
+
+
+    const payModal = document.getElementById('payModal');
+    const AmtData = document.getElementById('payData');
     if (payModal) {
       payModal.addEventListener('show.bs.modal', event => {
         const button = event.relatedTarget;
         const amount = button.getAttribute('data-bs-amount');
         const modalTitle = payModal.querySelector('.modal-title');
         modalTitle.textContent = `${amount}`;
+        AmtData.textContent = `${amount}`;
         document.getElementById("amount").value = amount;
 
       if (amount === '28320') { // Compare as a string since `getAttribute` returns a string
@@ -2412,6 +2474,14 @@
         });
 
         return false;
+      }
+      else{
+        fieldErr.forEach((err) => {
+          // err.textContent = "Fields are required.";
+          err.style.border = "1px solid #dee2e6";
+           
+        });
+
       }
 //       if (name === "" || email === "" || mobile === "") {
 //     fieldErr.forEach((err) => {
