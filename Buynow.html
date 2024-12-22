@@ -139,7 +139,7 @@
       height: 35px;
     }
 
-    
+
 
     .mygalla_buy_plan1 button {
       margin: 11px auto;
@@ -466,7 +466,7 @@
       width: 88vw;
       background: var(--theme-color1);
       background: #098924;
-    color: #fff;
+      color: #fff;
       /* background: #2fbe6d; */
       color: #fff;
       /* border: 1px solid #2fbe6d; */
@@ -498,10 +498,10 @@
 
     }
 
-    .form_update{
+    .form_update {
       position: relative;
     }
-    
+
     .form_update input {
       padding: 0.71rem 0.5rem;
       outline: none;
@@ -522,7 +522,7 @@
       transition: all 0.3s ease-in-out;
     }
 
-   
+
     .form_update input:is(:focus, :valid)+label {
       top: 0;
       padding: 0 4px;
@@ -530,19 +530,23 @@
       background: #fff;
 
     }
+
     .mygalla_buy_top_sec del {
-        font-size: 13px;
-        height: 10px;
+      font-size: 13px;
+      height: 10px;
     }
-    .amt{
+
+    .amt {
       display: flex;
-        gap: 7px;
+      gap: 7px;
     }
-    .amt span{
+
+    .amt span {
       display: flex;
       /* align-items: center; */
     }
-    .btn-data_modal{
+
+    .btn-data_modal {
       display: flex;
       gap: 3px;
       justify-content: center;
@@ -561,14 +565,16 @@
     }
 
     @media screen and (max-width: 790px) {
-    
-      .mygalla_buy_top_sec span{
+
+      .mygalla_buy_top_sec span {
         height: 15px;
       }
+
       .mygalla_buy_top_sec del {
-      font-size: 7px;
-      height: 4px;
-    }
+        font-size: 7px;
+        height: 4px;
+      }
+
       .gstAmt {
         font-size: 7px;
         position: relative;
@@ -1892,16 +1898,16 @@
         <div class="modal-body input_wrap_body">
           <small>Amount</small>
           <div class="amt">
-            Pay 
-         <span>₹<h2 class="modal-title" id="payModalLabel"> </h2></span> 
-          <div id="customMessage"></div>
-        </div>
+            Pay
+            <span>₹<h2 class="modal-title" id="payModalLabel"> </h2></span>
+            <div id="customMessage"></div>
+          </div>
           <div>
             <input type="text" id="amount" hidden>
             <div class="mb-3">
               <div class="form-group form_update">
                 <input type="text" class="form-control inps" id="name" required="">
-                <label for="name" class="col-form-label" >Name</label>
+                <label for="name" class="col-form-label">Name</label>
               </div>
             </div>
             <div class="mb-3">
@@ -1912,7 +1918,7 @@
             </div>
             <div class="mb-3">
               <div class="form-group  form_update">
-                <input type="text" class="form-control inps" id="email"required="">
+                <input type="text" class="form-control inps" id="email" required="">
                 <label for="email" class="col-form-label">Email</label>
               </div>
             </div>
@@ -1935,7 +1941,7 @@
         </div>
         <div class="modal-footer">
           <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-          <button type="button" class="btn btn-data_modal" onclick="paynow()">PAY ₹ <p  id="payData"></p></button>
+          <button type="button" class="btn btn-data_modal" onclick="paynow()">PAY ₹ <p id="payData"></p></button>
         </div>
       </div>
     </div>
@@ -1945,7 +1951,7 @@
 
   <!-- Modal -->
   <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
-    <div class="modal-dialog modal_wrapper">
+    <div class="modal-dialog modal_wrapper modal-dialog-centered">
       <div class="modal-content">
         <div class="modal-header">
           <div class="modal_img">
@@ -1987,7 +1993,7 @@
             <div class="mb-3">
               <div class="form-group form_update">
                 <input type="text" class="form-control inpsSub" id="nameSub" required="">
-                <label for="name" class="col-form-label" >Name</label>
+                <label for="name" class="col-form-label">Name</label>
               </div>
             </div>
             <div class="mb-3">
@@ -2006,7 +2012,7 @@
         </div>
         <div class="modal-footer">
           <!-- <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button> -->
-          <button type="button" class="btn" onclick="submitData()" >SUBMIT</button>
+          <button type="button" class="btn" onclick="submitData()">SUBMIT</button>
         </div>
       </div>
     </div>
@@ -2334,7 +2340,7 @@
     document.getElementById('planSection').innerHTML = data;
 
     // var btn1 = document.querySelector('buy_btn2');
-    
+
     const CoustomData = [
       {
         "name": "Own Brand App",
@@ -2408,33 +2414,27 @@
 
   <script>
 
-     function submitData() {
-      const name = document.getElementById("nameSub").value;
-      const email = document.getElementById("emailSub").value;
-      const mobile = document.getElementById("mobileSub").value;
+    // Add event listeners to input fields
+    const inputs = document.querySelectorAll('.inpsSub');
 
+    inputs.forEach((input) => {
+      input.addEventListener('input', () => {
+        if (input.value.trim() === "") {
+          input.style.border = "1px solid red";
+        } else {
+          input.style.border = "1px solid green";
+        }
+      });
+    });
 
-      var fieldErr = document.querySelectorAll('.inpsSub');
-      // console.log(fieldErr);
+    function submitData() {
+      inputs.forEach((input) => {
+        if (input.value.trim() === "") {
+          input.style.border = "1px solid red";
+        }
+      });
+    }
 
-      if (name === "" || email === "" || mobile === "") {
-        fieldErr.forEach((err) => {
-          // err.textContent = "Fields are required.";
-          err.style.border = "1px solid red";
-           
-        });
-
-
-      }
-      else{
-        fieldErr.forEach((err) => {
-          // err.textContent = "Fields are required.";
-          err.style.border = "1px solid #dee2e6";
-           
-        });
-      }
-     }
-      
 
 
     const payModal = document.getElementById('payModal');
@@ -2448,13 +2448,26 @@
         AmtData.textContent = `${amount}`;
         document.getElementById("amount").value = amount;
 
-      if (amount === '28320') { // Compare as a string since `getAttribute` returns a string
-      document.getElementById("customMessage").textContent = " (Product: ₹24000 + GST: ₹4320)";
-    } else if(amount === '7080') {
-      document.getElementById("customMessage").textContent = " (Product: ₹6000 + GST: ₹1080)";
+        if (amount === '28320') { // Compare as a string since `getAttribute` returns a string
+          document.getElementById("customMessage").textContent = " (Product: ₹24000 + GST: ₹4320)";
+        } else if (amount === '7080') {
+          document.getElementById("customMessage").textContent = " (Product: ₹6000 + GST: ₹1080)";
+        }
+      });
     }
-  });
-    }
+
+    var fieldErr = document.querySelectorAll('.inps');
+    fieldErr.forEach((errinput) => {
+      console.log(errinput);
+
+      errinput.addEventListener('input', () => {
+        if (errinput.value.trim() === "") {
+          errinput.style.border = "1px solid red";
+        } else {
+          errinput.style.border = "1px solid green";
+        }
+      });
+    });
 
     async function paynow() {
 
@@ -2463,41 +2476,35 @@
       const mobile = document.getElementById("mobile").value;
       const amount = document.getElementById("amount").value;
 
-      var fieldErr = document.querySelectorAll('.inps');
-      console.log(fieldErr);
-
       if (name === "" || email === "" || mobile === "") {
-        fieldErr.forEach((err) => {
-          // err.textContent = "Fields are required.";
-          err.style.border = "1px solid red";
-           
+        fieldErr.forEach((input) => {
+          if (input.value.trim() === "") {
+            input.style.border = "1px solid red";
+          }
         });
-
         return false;
       }
-      else{
-        fieldErr.forEach((err) => {
-          // err.textContent = "Fields are required.";
-          err.style.border = "1px solid #dee2e6";
-           
-        });
 
+      const emailRegex = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+      const mobileRegex = /^[0-9]{10}$/;
+
+
+      if (!emailRegex.test(email)) {
+        document.getElementById("email").style.border = "1px solid red";
+        return false;
+      } else {
+        document.getElementById("email").style.border = "1px solid green";
       }
-//       if (name === "" || email === "" || mobile === "") {
-//     fieldErr.forEach((err) => {
-//         if (err.value.trim() === "") {
-//             err.style.border = "1px solid red"; // Apply red border for empty fields
-//         } else {
-//             err.style.border = "1px solid green"; // Remove border if the field is filled
-//         }
-//     });
-//     return false;
-// } else {
-//     fieldErr.forEach((err) => {
-//         err.style.border = "1px solid green"; // Ensure all fields have no border when valid
-//     });
-//     return true;
-// }
+
+      if (!mobileRegex.test(mobile)) {
+        document.getElementById("mobile").style.border = "1px solid red";
+        return false;
+      } else {
+        document.getElementById("mobile").style.border = "1px solid green";
+      }
+
+
+
 
       const formData = new FormData();
       formData.append("name", name);
